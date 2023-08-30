@@ -1,3 +1,9 @@
+// היי :)
+// כתבתי 2 קודים, אשמח אם תוכל לעבור על שניהם
+// decodeBits את הראשון כתבתי לבד לגמרי רק ממה שאני מכירה ויודעת עם כיוון לפתרון והרבה ניסוי וטעייה עד שהוא הציג פלט נכון כי זה יחסית קוד ארוך ומורכב
+// decodeBits1 בשני, ראיתי את אחת המתודה ריפיט אצל אחד מהחבר'ה ועוד מתודה באתר, ובדקתי איך אפשר להשתשמש בהם כשהדרך היא בחשיבה שלי ונעזרתי באיך ליישם ספציפית לפי מה שאני חושבת, באינטרנט או בגיפיטי
+// תודה רבה!! :)
+
 const decodeBits1 = function (bits) {
   const arr = bits.split(1).filter(Boolean);
   const max = Math.max(...arr.map((el) => el.length));
@@ -23,8 +29,8 @@ const decodeBits1 = function (bits) {
 
   for (let i = 0; i < sortBitsArr.length; i++) {
     currentBits = sortBitsArr[i];
-    sign = Object.keys(bitsObj).find((key) => bitsObj[key] === currentBits);
-    morseCode = morseCode.split(currentBits).join(sign);
+    symbool = Object.keys(bitsObj).find((key) => bitsObj[key] === currentBits);
+    morseCode = morseCode.split(currentBits).join(symbool);
   }
   return morseCode;
 };
